@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinequel - Movie Subscription Platform</title>
+    <script src="https://kit.fontawesome.com/eabd7bfc13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/mobile.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__wrapper">
+            <div class="logo__wrapper">
+                <figure>
+                    <a href="index.html">
+                        <img id="logo" src="assets/logo.png" alt="brand logo">
+                    </a>
+                </figure>
+                <a id="logo_name" href="index.html">cinee</a>
+            </div>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a class="nav__link-anchor link__hover-effect" href="index.html">Home</a>
+                </li>
+                <li class="nav__link">
+                    <a class="nav__link-anchor link__hover-effect" href="movies.html">Movies
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a class="nav__link-anchor link__hover-effect" href="plans.html">Plans</a>
+                </li>
+                <li class="nav__link click">
+                    <a class="nav__link-anchor nav__link-anchor--primary not-implemented" href="#">Log in</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars mobile-menu__icon--open click" onclick="openMenu()"></i>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__link" onclick="closeMenu()">
+                    <a class="mobile-menu__anchor link__hover-effect" href="index.html">Home</a>
+                </li>
+                <li class="mobile-menu__link" onclick="closeMenu()">
+                    <a class="mobile-menu__anchor link__hover-effect" href="movies.html">Movies</a>
+                </li>
+                <li class="mobile-menu__link" onclick="closeMenu()">
+                    <a class="mobile-menu__anchor link__hover-effect" href="plans.html">Plans</a>
+                </li>
+                <li class="mobile-menu__link click" onclick="closeMenu()">
+                    <a class="mobile-menu__anchor mobile-menu__anchor--primary" href="#" not-implemented>Log in</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-x mobile-menu__icon--close click" onclick="closeMenu()"></i>
+        </div>
+    </nav>
+
+    <section id="contact-baner-section">
+        <div class="container">
+            <div class="row">
+                    <h1 class="title">Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact__wrapper">
+                    <div class="contact__col-1">
+                        <div class="contact_col-1--header">
+                            <h2 class="section__title--primary">Contact Us</h2>
+                            <p class="section__para">Feel free to contact us any time. <br>We will respond as fast as possible.</p>
+                        </div>
+                        <div class="contact__col-1--body">
+                            <form class="contact__form">
+                                <input class="input__contact" type="text" placeholder="Name" required>
+                                <input class="input__contact" type="email" placeholder="Email" required>
+                                <textarea class="textarea__contact" placeholder="Message"></textarea>
+                                <button class="button__contact click">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact__col-2">
+                        <h3 class="contact__col-2--title">Info</h3>
+                        <div class="contact__data--wrapper">
+                            <i class="fa-solid fa-envelope contact__icon"></i>
+                            <span class="contact__data">contact@cinee.com</span> 
+                        </div>
+                        <div class="contact__data--wrapper">
+                            <i class="fa-solid fa-phone contact__icon"></i>
+                            <span class="contact__data"> +48 223 332 123</span>
+                        </div>
+                        <div class="contact__data--wrapper">
+                            <i class="fa-solid fa-building contact__icon"></i>
+                            <span class="contact__data">Poland, Warsaw ul.Szklana 7</span>
+                        </div>
+                        <div class="contact__data--wrapper">
+                            <i class="fa-solid fa-hourglass-empty contact__icon"></i>
+                            <span class="contact__data"> 09:00 - 18:00</span>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__wrapper">
+                    <figure class="footer__img--wrapper">
+                        <img class="footer__img" src="assets/logo.png" alt="brand logo"> 
+                    </figure>
+                    <ul class="footer__link--list">
+                        <li class="footer__link">
+                            <a class="footer__link--anchor link__hover-effect">Home</a>
+                        </li>
+                        <li class="footer__link">
+                            <a class="footer__link--anchor link__hover-effect">Movies</a>
+                        </li>
+                        <li class="footer__link">
+                            <a class="footer__link--anchor link__hover-effect">Plans</a>
+                        </li>
+                        <li class="footer__link">
+                            <a class="footer__link--anchor link__hover-effect">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="footer__rights">Copyright &copy; 2022 cinee</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
