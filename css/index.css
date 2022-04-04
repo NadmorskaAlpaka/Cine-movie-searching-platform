@@ -245,6 +245,20 @@ header{
 .header__wrapper{
     text-align: center;
     margin-bottom: 120px;
+    animation: flow 700ms ease-out;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@keyframes flow {
+    0%{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .title{
@@ -254,7 +268,6 @@ header{
     font-weight: 300;
     margin-bottom: 28px;
 }
-
 
 .input__wrapper{
     max-width: 800px;
