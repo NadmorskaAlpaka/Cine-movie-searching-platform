@@ -16,7 +16,7 @@ function showMoviesByClick() {
 
     if(movieByUser !== ""){
         localStorage.setItem("movieTitle",movieByUser);
-        window.location.href=`${window.location.origin}/cinequel---Movie-Platform/movies.html`;
+        window.location.href=`${window.location.origin}/Cine-movie-searching-platform/movies.html`;
     } else if(movieByUser === ""){
         alert("Field cannot be empty");
     }
@@ -26,7 +26,7 @@ function showMoviesByEnter(event){
     if(event.key === "Enter" && event.target.value !== ""){
         movieByUser = event.target.value;
         localStorage.setItem("movieTitle",movieByUser);
-        window.location.href=`${window.location.origin}/cinequel---Movie-Platform/movies.html`;
+        window.location.href=`${window.location.origin}/Cine-movie-searching-platform/movies.html`;
     }else if(event.key === "Enter" && event.target.value === ""){
         alert("Field cannot be empty");
     }
